@@ -1,0 +1,8 @@
+app_name=mbprod
+
+log_level=DEBUG
+
+loggingRoot=logs
+
+dubbo.registry.address=zookeeper://127.0.0.1:2181
+dubbo.cache.file=/Users/yangtongbin/work/cache/dubbo/dubbo.cache
