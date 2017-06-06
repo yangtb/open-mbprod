@@ -5,12 +5,53 @@
     <parent>
         <artifactId>open-mbprod-parent</artifactId>
         <groupId>com.sm</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sm</groupId>
     <artifactId>open-mbprod-service</artifactId>
+    <packaging>jar</packaging>
+    <version>${open.mbprod.service.version}</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-care-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-mbprod-dal</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-mbprod-integration</artifactId>
+        </dependency>
+
+        <!-- 分布式消息中间件 -->
+
+        <!-- 分布式消息中间件 发布者 -->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <!-- 单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>

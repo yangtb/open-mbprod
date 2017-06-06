@@ -5,12 +5,38 @@
     <parent>
         <artifactId>open-mbprod-parent</artifactId>
         <groupId>com.sm</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sm</groupId>
     <artifactId>open-mbprod-integration</artifactId>
+    <packaging>jar</packaging>
+    <version>${open.mbprod.integration.version}</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-care-core</artifactId>
+        </dependency>
+        <!-- 引入核心服务 -->
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-mbprod-facade</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sm</groupId>
+            <artifactId>open-mbprod-model</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+    </dependencies>
 </project>
