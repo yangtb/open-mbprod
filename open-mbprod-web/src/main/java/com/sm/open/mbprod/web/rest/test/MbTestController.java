@@ -30,6 +30,6 @@ public class MbTestController {
     @ResponseBody
     public ResultObject testOpen(HttpServletRequest request, @RequestBody MbTestDto mbTestDto) {
         return ResultObject.create("testOpen", ResultObject.SUCCESS_CODE, ResultObject.MSG_SUCCESS,
-                ResultObject.DATA_TYPE_LIST, mbTestService.testOpen(mbTestDto));
+                ResultObject.DATA_TYPE_OBJECT, mbTestService.testOpen(mbTestDto));
     }
 }

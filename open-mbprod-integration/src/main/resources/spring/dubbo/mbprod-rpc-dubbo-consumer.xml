@@ -4,9 +4,11 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	   http://code.alibabatech.com/schema/dubbo https://git.oschina.net/swangs/swang-framework/raw/master/swang-framework-core/src/main/resources/schema/dubbo/dubbo.xsd">
 
+	<dubbo:application name="open-mbprod"/>
 	<dubbo:consumer check="false" timeout="${dubbo.timeout}" />
+	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}"/>
 
-	<dubbo:reference id="mbTestFacade" interface="com.sm.open.core.facade.mb.test.MbTestFacade"/> -->
+	<dubbo:reference id="mbTestFacade" interface="com.sm.open.core.facade.mb.test.MbTestFacade"/>
 
 
 </beans>

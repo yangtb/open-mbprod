@@ -10,8 +10,8 @@ public class MbTestDto implements Serializable {
 
     @JSONField(name = "test_id")
     private Long    testId;
-    @JSONField(name = "testName")
-    private String  test_name;
+    @JSONField(name = "test_name")
+    private String  testName;
 
     public Long getTestId() {
         return testId;
@@ -21,19 +21,19 @@ public class MbTestDto implements Serializable {
         this.testId = testId;
     }
 
-    public String getTest_name() {
-        return test_name;
+    public String getTestName() {
+        return testName;
     }
 
-    public void setTest_name(String test_name) {
-        this.test_name = test_name;
+    public void setTestName(String testName) {
+        this.testName = testName;
     }
 
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("MbTestDto{");
         sb.append("testId=").append(testId);
-        sb.append(", test_name='").append(test_name).append('\'');
+        sb.append(", testName='").append(testName).append('\'');
         sb.append('}');
         return sb.toString();
     }

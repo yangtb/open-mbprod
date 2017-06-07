@@ -57,6 +57,7 @@
         <mysql.version>5.1.21</mysql.version>
 
         <aspectj.version>1.7.4</aspectj.version>
+        <zkclient-version>0.1</zkclient-version>
         <dubbo.version>2.5.3</dubbo.version>
         <junit.version>4.12</junit.version>
     </properties>
@@ -294,6 +295,11 @@
                 <version>${aspectj.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient-version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
