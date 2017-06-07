@@ -32,7 +32,7 @@
         <open.mbprod.integration.version>1.0.0</open.mbprod.integration.version>
         <open.mbprod.facade.version>1.0.0</open.mbprod.facade.version>
         <open.mbprod.web.version>1.0.0</open.mbprod.web.version>
-        <medicalpfcore.facade.version>1.0.0</medicalpfcore.facade.version>
+        <open.core.facade.version>1.0.0</open.core.facade.version>
         <!-- 阿里的jar版本管理 -->
         <fastjson.version>1.2.7.sec01</fastjson.version>
         <!-- 第三方jar的版本管理 -->
@@ -57,16 +57,13 @@
         <mysql.version>5.1.21</mysql.version>
 
         <aspectj.version>1.7.4</aspectj.version>
+        <dubbo.version>2.5.3</dubbo.version>
         <junit.version>4.12</junit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
+            <!-- 【架构体系内的jar start】 -->
             <dependency>
                 <groupId>com.sm</groupId>
                 <artifactId>open-care-core</artifactId>
@@ -102,10 +99,21 @@
                 <artifactId>open-mbprod-facade</artifactId>
                 <version>${open.mbprod.facade.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.sm</groupId>
+                <artifactId>open-core-facade</artifactId>
+                <version>${open.core.facade.version}</version>
+            </dependency>
+            <!-- 【架构体系内的jar end】 -->
 
             <!-- 分布式session -->
 
             <!-- 以下为第三方jar -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
@@ -284,6 +292,12 @@
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectj.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
             </dependency>
 
 

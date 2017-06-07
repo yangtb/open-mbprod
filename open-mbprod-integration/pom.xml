@@ -14,29 +14,49 @@
     <version>${open.mbprod.integration.version}</version>
 
     <dependencies>
+        <!-- 【架构体系内的jar start】 -->
         <dependency>
             <groupId>com.sm</groupId>
             <artifactId>open-care-core</artifactId>
         </dependency>
-        <!-- 引入核心服务 -->
         <dependency>
             <groupId>com.sm</groupId>
-            <artifactId>open-mbprod-facade</artifactId>
+            <artifactId>open-core-facade</artifactId>
         </dependency>
         <dependency>
             <groupId>com.sm</groupId>
             <artifactId>open-mbprod-model</artifactId>
         </dependency>
+        <!-- 【架构体系内的jar end】 -->
 
+        <!-- 以下为第三方jar -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
         </dependency>
+
     </dependencies>
 </project>
