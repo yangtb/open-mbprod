@@ -21,7 +21,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.6</java.version>
+        <java.version>1.8</java.version>
 
         <!-- 项目里的jar版本管理 -->
         <open.care.core.version>1.0.0</open.care.core.version>
@@ -36,7 +36,7 @@
         <!-- 阿里的jar版本管理 -->
         <fastjson.version>1.2.7.sec01</fastjson.version>
         <!-- 第三方jar的版本管理 -->
-        <spring.version>4.3.7.RELEASE</spring.version>
+        <spring.version>4.2.8.RELEASE</spring.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
         <spring.security.core.tiger>2.0.8.RELEASE</spring.security.core.tiger>
         <spring.oauth2.version>2.1.0.RELEASE</spring.oauth2.version>
@@ -304,6 +304,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>spring</artifactId>
+                        <groupId>org.springframework</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
 
