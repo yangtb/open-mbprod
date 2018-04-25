@@ -34,7 +34,7 @@ public class MbTestController {
     @RequestMapping(value = "/test")
     @ResponseBody
     public ResultObject testOpen(HttpServletRequest request, @RequestBody MbTestDto mbTestDto) {
-        LoggerUtil.info(LOGGER,"【MbTestController-testOpen-params】{0}", mbTestDto.toString());
+        LOGGER.info("params:{}", mbTestDto.toString());
         return ResultObject.create("testOpen", ResultObject.SUCCESS_CODE, ResultObject.MSG_SUCCESS,
                 ResultObject.DATA_TYPE_OBJECT, mbTestService.testOpen(mbTestDto));
     }
