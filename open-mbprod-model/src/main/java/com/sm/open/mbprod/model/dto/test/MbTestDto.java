@@ -1,5 +1,6 @@
 package com.sm.open.mbprod.model.dto.test;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.annotation.JSONField;
 
 import java.io.Serializable;
@@ -31,10 +32,6 @@ public class MbTestDto implements Serializable {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("MbTestDto{");
-        sb.append("testId=").append(testId);
-        sb.append(", testName='").append(testName).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return JSON.toJSONString(this);
     }
 }
