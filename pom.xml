@@ -17,6 +17,7 @@
         <module>open-mbprod-model</module>
         <module>open-mbprod-service</module>
         <module>open-mbprod-web</module>
+        <module>../study</module>
     </modules>
 
     <properties>
