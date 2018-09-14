@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sm</groupId>
-    <artifactId>open-mbprod-parent</artifactId>
+    <artifactId>open-mbprod</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
