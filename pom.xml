@@ -34,7 +34,7 @@
         <open.mbprod.web.version>1.0.0</open.mbprod.web.version>
         <open.core.facade.version>1.0.0</open.core.facade.version>
         <!-- 阿里的jar版本管理 -->
-        <fastjson.version>1.2.51</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <!-- 第三方jar的版本管理 -->
         <spring.version>4.2.8.RELEASE</spring.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
